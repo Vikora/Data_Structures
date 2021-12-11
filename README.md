@@ -2,13 +2,13 @@
 EDU. Set of small programs implementing common data structures
 
 ## Phone book
-An imitation of a simple phone book manager. Use custom crude hash table.
+Imitation of a simple phone book manager. Use a custom rough hash table.
 
-Hash table maps integers to strings.
+A hash table matches integers with strings.
 
     h(x) = (a*x + b) mod p mod m,
     
-where `p = 100 000 007` is a prime number, `m` is a size of a hash table.
+where `p = 100 000 007` is a prime number, `m` is the size of the hash table.
 
 Supports the following types of user’s queries:
 
@@ -23,11 +23,11 @@ Given the number of buckets and the hash function. It is a polynomial hash funct
 
 where `S[i]` is the ASCII code of the i-th symbol of S, `p = 1e9+7` and `x  = 263`.
 
-Supports the following kinds of queries:
+Supports the following types of queries:
 
-* `add string` — insert string into the table. If there is already such string in the hash table, then
+* `add string` — insert the string into the table. If there is already such string in the hash table, then
 just ignore the query.
-*  `del string` — remove string from the table. If there is no such string in the hash table, then
+*  `del string` — remove the string from the table. If there is no such string in the hash table, then
 just ignore the query.
 * `find string` — output “yes" or “no".
 * `check`  — output the content of the i-th list in the table.
@@ -36,7 +36,7 @@ just ignore the query.
 
 Implementation of the Rabin–Karp’s algorithm for searching the given pattern in the given text.
 
-Given a string S. Let's say that `H(i, p)` is a hash of a substring `S[i-p]..S[i]`.
+Given a string `S`. Let's say that `H(i, p)` is a hash of a substring `S[i-p]..S[i]`.
 
 Hence `H(i, i)` is a hash of `S[0]..S[i]` and
 
